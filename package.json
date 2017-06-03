@@ -1,0 +1,25 @@
+{
+  "name": "drl",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g-harel/drl.git"
+  },
+  "author": "g-harel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/g-harel/drl/issues"
+  },
+  "homepage": "https://github.com/g-harel/drl#readme",
+  "devDependencies": {
+    "jest": "^20.0.4"
+  },
+  "dependencies": {
+    "path-to-regexp": "^1.7.0"
+  }
+}
