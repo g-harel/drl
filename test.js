@@ -8,6 +8,12 @@ test('can store paths and their callbacks', () => {
     expect(store.exec('/1')).toBe(1);
 });
 
+test('callback result is returned', () => {
+    const store = drl();
+    store.add('/test', () => 1);
+    expect(store.exec('/test')).toBe(1);
+});
+
 test('add will reject invalid arguments', () => {
     const store = drl();
     expect(() => store.add(0, () => {})).toThrow(/string/);
