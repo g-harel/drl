@@ -20,6 +20,6 @@
     "jest": "^20.0.4"
   },
   "dependencies": {
-    "path-to-regexp": "^1.7.0"
+    "path-to-regexp": "^2.0.0"
   }
 }

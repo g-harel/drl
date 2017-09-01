@@ -9,8 +9,11 @@ const is = (type) => (value) => {
 const add = (store) => (path, callback) => {
     is('string')(path);
     is('function')(callback);
+    const keys = [];
+    const pattern = pathToRegexp(path, keys, {strict: true});
+    pattern.keys = keys;
     store.push({
-        pattern: pathToRegexp(path, [], {strict: true}),
+        pattern,
         callback,
     });
 };
